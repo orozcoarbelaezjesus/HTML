@@ -1,0 +1,24 @@
+<!--
+    Realizarar la declaración Doctype para frames.
+-->
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames - Actualización de una frame a partir de otro frame</title>
+</head>
+<frameset cols="40%,40%">
+    <frame src="pagina2.html">
+        <frame src="pagina3.html" name="ventanadinamica">
+            <noframes>
+                <p>El navegador no soporta frames</p>
+            </noframes>
+</frameset>
+
+</html>

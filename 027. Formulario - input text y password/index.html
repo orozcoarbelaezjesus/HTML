@@ -1,0 +1,34 @@
+<!--
+    Confeccionar un formulario que solicite el ingreso de mail de una persona y luego pida el ingreso de su clave dos veces (recordar inicializar la propiedad name del elemento input con distintos nombres para cada control) 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Input text y password</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="registrardatos.php">
+                <label for="email">Ingrese su correo electrónico: 
+                    <input type="text" id="email" name="email">
+                </label>
+                <br><br>
+                <label for="contraseña">Ingrese su contraseña: 
+                    <input type="password" id="contraseña" name="contraseña">
+                </label>
+                <br><br>
+                <label for="confirmacion_contraseña">Ingrese nuevamente su contraseña: 
+                    <input type="password" id="confirmacion_contraseña" name="confirmacion_contraseña">
+                </label>
+                <br><br>
+                <input type="submit" value="Enviar datos">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--
+    Confeccionar un formulario que solicite el ingreso del nombre de una persona y su edad. Luego llamar a la página "registrardatos.php" para que imprima en pantalla los valores ingresados. Disponer un botón de tipo submit para el envío de los datos. 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="registrardatos.php">
+                <label for="nombre">Ingrese su nombre: 
+                    <input type="text" id="nombre" name="nombre">
+                </label>
+                <br>
+                <label for="edad">Ingrese su edad: 
+                    <input type="text" id="edad" name="edad">
+                </label>
+                <br>
+                <input type="submit" value="Enviar datos">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

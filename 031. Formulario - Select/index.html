@@ -1,0 +1,31 @@
+<!--
+    Confeccionar un formulario que solicite el ingreso del nombre de una persona y permita votar el sitio. Mediante un cuadro de selección el visitante puede elegir entre las siguientes opciones: Excelente, Muy Bueno, Bueno, Regular y Malo.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Select</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h4>¿Cuál es su valoración sobre nuestro sitio web?</h4>
+            <form action="registrardatos.php">
+                <select name="valoración" id="valoracion">
+                    <option value="Excelente">Excelente</option>
+                    <option value="Muy Bueno">Muy Bueno</option>
+                    <option value="Bueno">Bueno</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Malo">Malo</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!--
+    Confeccione un formulario de un libro de visitas, se debe solicitar el nombre, mail, país de origen (por defecto la opcion seleccionada debe ser "seleccione pais"), valoración del sitio (malo, regular, bueno, muy bueno, excelente) por defecto debe estar seleccionado "bueno". Por último disponer un textarea donde se puede ingresar los comentarios.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Controles con valores iniciales</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="registrardatos.php">
+                <fieldset>
+                    <legend>Datos del visitante</legend>
+                    <label for="nombre">Nombre: 
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    </label>
+                    <br><br>
+                    <label for="email">Correo electrónico: 
+                        <input type="text" name="email" id="email" placeholder="Ingrese su email">
+                    </label>
+                    <br><br>
+                    <label for="país">País<br>
+                        <select name="país" id="país">
+                            <option value="Seleccione" selected>Seleccione país</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Valoración del sitio</legend>
+                    <label for="valoración">Valoración del sitio: 
+                        <select name="valoración" id="valoración">
+                            <option value="1">Muy malo</option>
+                            <option value="2">Malo</option>
+                            <option value="3" selected>Bueno</option>
+                            <option value="4">Muy bueno</option>
+                            <option value="5">Excelente</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label for="comentarios">Comentarios: <br>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Ingrese aquí cualquier opinión o sugerencia..."></textarea>
+                    </label>
+                </fieldset>
+                <br>
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

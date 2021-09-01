@@ -1,0 +1,50 @@
+<!--
+    Confeccione un control de tipo select con los nombres de paises de América y Europa. Agrupe los paises por continente.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Select - Agrupamiento de opciones</title>
+</head>
+
+<body>
+    <main>
+        <form action="registrardatos.php">
+            <select name="país" id="país">
+                <optgroup label="América">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="Alemania">Alemania</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Italia">Italia</option>
+                    <option value="España">España</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Inglaterra">Inglaterra</option>
+                    <option value="Suecia">Suecia</option>
+                    <option value="Holanda">Holanda</option>
+                    <option value="Suiza">Suiza</option>
+                    <option value="República Checa">República Checa</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+
+</html>

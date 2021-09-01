@@ -1,0 +1,39 @@
+<!--
+    Confeccionar una página que contenga dos divisiones con una serie de párrafos cada una. Disponer color de fondo distinto para cada sección. En la segunda sección mostrar el mismo texto de la primera sección pero con algunas palabras tachadas.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML div y span</title>
+</head>
+<style>
+    .div1 {
+        background-color: palevioletred;
+    }
+    .div2 {
+        background-color: rebeccapurple;
+    }
+    .div1, .div2 {
+        color: white;
+    }
+</style>
+<body>
+    <main>
+        <div class="div1">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <br><br>
+        <div class="div2">
+            <p>
+                <span style="text-decoration: line-through">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span> Quo reprehenderit nesciunt tenetur non architecto consequatur quisquam, deleniti sint nam explicabo sit maxime consectetur animi ad accusantium cum, assumenda voluptates nisi?
+            </p>
+        </div>
+    </main>
+</body>
+</html>

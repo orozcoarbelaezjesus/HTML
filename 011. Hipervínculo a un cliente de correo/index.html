@@ -1,0 +1,36 @@
+<!--
+    Una empresa que vende pizzas tiene 3 ofertas. Las mismas son:
+
+1- 1 muzzarella y una bebida cola a 5 pesos, 
+2- 2 muzzarellas a 6 pesos y
+3- 4 muzarrellas a 10 pesos
+
+Confeccionar una página que disponga tres hipervínculos a cada una de esas ofertas. Al ser presionadas abrir el cliente de correo y enviar la promoción correspondiente. En el título indicar si se trata de la promoción 1, 2 o 3. En el cuerpo del mensaje pedir que ingrese la dirección y teléfono de la persona que hace el pedido. 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipervínculo a un cliente de correo</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="mailto:pedidos-pizza@email.com?subjet=Oferta número 1&body=Ingresa tu dirección y número de teléfono">
+                1 Muzzarella y una bebida cola a 5 pesos
+            </a>
+            <br>
+            <a href="mailto:pedidos-pizza@email.com?subjet=Oferta número 2&body=Ingresa tu dirección y número de teléfono">
+                2 Muzzarellas a 6 pesos
+            </a>
+            <br>
+            <a href="mailto:pedidos-pizza@email.com?subjet=Oferta número 3&body=Ingresa tu dirección y número de teléfono">
+                4 Muzzarellas a 10 pesos
+            </a>
+        </nav>
+    </main>
+</body>
+</html>

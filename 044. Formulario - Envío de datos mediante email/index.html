@@ -1,0 +1,46 @@
+<!--
+    Confeccionar un formulario que permita solicitar pizzas a domicilio. Enviar el pedido a la dirección de correo pizzasya@gmail.com 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Envío de datos mediante email</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="mailto:pizzasya@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Datos del cliente</legend>
+                    <label for="nombre">Nombre del cliente:
+                        <input type="text" name="nombre" id="nombre">
+                    </label>
+                    <br><br>
+                    <label for="teléfono">Teléfono:
+                        <input type="text" id="teléfono" name="teléfono">
+                    </label>
+                    <br><br>
+                    <label for="dirección">Dirección: <br>
+                        <textarea name="dirección" id="direccón" cols="30" rows="5"></textarea>
+                    </label>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del pedido</legend>
+                    <input type="checkbox" name="oferta1"> 1 Muzzarella y una bebida cola a 5 pesos. <br>
+                    <input type="checkbox" name="oferta2"> 2 Muzarellass a 6 pesos <br>
+                    <input type="checkbox" name="oferta3"> 4 Muzarellas a 10 pesos <br>
+                </fieldset>
+                <br>
+                <button type="submit">
+                    Realizar pedido
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

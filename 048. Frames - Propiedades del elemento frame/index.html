@@ -1,0 +1,22 @@
+<!--
+    Confeccionar una página que contenga dos frames verticales. En el frame de la izquierda disponer hipervínculos a periódicos de su país. Cuando se presione el hipervínculo actualizar el frame de la derecha con la página principal de ese periódico (tener en cuenta que los frames pueden mostrar páginas que se encuentran en distintos servidores)
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames - Actualización de una frame a partir de otro frame</title>
+</head>
+<frameset cols="200,*">
+    <frame src="pagina2.html" frameborder="1" noresize>
+    <frame src="pagina3.html" name="ventanadinamica" scrolling="yes">
+            <noframes>
+                <p>El navegador no soporta frames</p>
+            </noframes>
+</frameset>
+
+</html>

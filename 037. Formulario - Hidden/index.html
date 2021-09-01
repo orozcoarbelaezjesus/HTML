@@ -1,0 +1,29 @@
+<!--
+    Podemos imaginar una utilidad, supongamos que queremos que un visitante reenvíe un formulario cargado con todos los datos en un tiempo limitado, podríamos almacenar en el campo oculto la primera vez que solicita la página que contiene el formulario donde se resgistrará dicha hora. Luego al subir el formulario ya cargado al servidor controlaremos mediante un lenguaje de servidor si la hora actual y la hora de pedido del formulario no hacen invalidar los datos.
+    Utilizar un input de tipo hidden para almacenar la hora en la que comenzó el examen.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Hidden</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="registrardatos.php">
+                <input type="hidden" value="10:40" name="hora">
+                <h4>Selecciona el axioma de Java que creas sea correcto</h4>
+                <ul>
+                    <li>Busca la solución de otro programador <input type="button" value="Seleccionar" name="respuesta1"></li>
+                    <li>Escríbe una vez, ejecuta en todas partes <input type="button" value="Seleccionar" name="respuesta2"></li>
+                    <li>Escríbe una vez, luego copia y pega <input type="button" value="Seleccionar" name="respuesta3"></li>
+                </ul>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
